@@ -1,0 +1,112 @@
++ [[ 1 == 1 ]]
++ static_date=20170727
++ local_dir=/home/work/shangbai
++ bin_dir=/home/work/shangbai/bin
++ data_dir=/home/work/shangbai/data/20170727
++ global_data_dir=/home/work/shangbai/online
++ log_dir=/home/work/shangbai/log
++ history_days=5
++ url_shangbai_data=ftp://cp01-rd-crm-cdc-db10.cp01.baidu.com/home/work/mbjhbtask/wisefc/check_wisefc_na_day_20170727
++ url_shangbai_md5=ftp://cp01-rd-crm-cdc-db10.cp01.baidu.com/home/work/mbjhbtask/wisefc/check_wisefc_na_day_20170727.md5
++ file_pc_dead=pc_dead
++ file_mixer_block=mixer_block
++ file_feed_block=feed_block
++ file_badcase_replace=badcase_replace
++ path_replace_dict=/home/work/shangbai/online/replace_dict
++ path_white_domain=/home/work/shangbai/online/white_domain
++ path_global_pc_dead=/home/work/shangbai/online/pc_dead
++ path_global_pc_dead_md5=/home/work/shangbai/online/pc_dead.md5
++ path_global_mixer_block=/home/work/shangbai/online/mixer_block
++ path_global_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_global_feed_block=/home/work/shangbai/online/feed_block
++ path_global_feed_block_md5=/home/work/shangbai/online/feed_block.md5
++ path_global_badcase_replace=/home/work/shangbai/online/badcase_replace
++ path_global_badcase_replace_md5=/home/work/shangbai/online/badcase_replace.md5
++ path_shangbai_ori=/home/work/shangbai/data/20170727/shangbai_ori
++ path_shangbai_ori_md5=/home/work/shangbai/data/20170727/shangbai_ori.md5
++ path_shangbai_data=/home/work/shangbai/data/20170727/shangbai_data
++ path_na_input=/home/work/shangbai/data/20170727/na_input
++ path_na_output=/home/work/shangbai/data/20170727/na_output
++ file_result_data=check_wisefc_na_day_20170727.res
++ path_result_data=/home/work/shangbai/data/20170727/check_wisefc_na_day_20170727.res
++ path_result_md5=/home/work/shangbai/data/20170727/check_wisefc_na_day_20170727.res.md5
++ path_pc_dead=/home/work/shangbai/data/20170727/pc_dead
++ path_mixer_block=/home/work/shangbai/data/20170727/mixer_block
++ path_feed_block=/home/work/shangbai/data/20170727/feed_block
++ path_mail_data=/home/work/shangbai/data/20170727/mail_data
++ path_trend_picture1=/home/work/shangbai/data/20170727/trend1.png
++ path_trend_picture2=/home/work/shangbai/data/20170727/trend2.png
++ path_trend1_base64=/home/work/shangbai/data/20170727/trend1_base64
++ path_trend2_base64=/home/work/shangbai/data/20170727/trend2_base64
++ path_sample_pc100=/home/work/shangbai/data/20170727/sample_pc100
++ path_sample_dead100=/home/work/shangbai/data/20170727/sample_dead100
++ path_mail_template=/home/work/shangbai/bin/mail_template
++ main_task
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:08'
++ echo -e '2017/07/29 20:44:08 init work space...'
+2017/07/29 20:44:08 init work space...
++ log 'change directory to local dir...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:08'
++ echo -e '2017/07/29 20:44:08 change directory to local dir...'
+2017/07/29 20:44:08 change directory to local dir...
++ cd /home/work/shangbai
++ log 'change directory done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:08'
++ echo -e '2017/07/29 20:44:08 change directory done'
+2017/07/29 20:44:08 change directory done
++ [[ ! -d /home/work/shangbai/data/20170727 ]]
++ log 'init done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:08'
++ echo -e '2017/07/29 20:44:08 init done'
+2017/07/29 20:44:08 init done
++ log 'static_date: 20170727'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:08'
++ echo -e '2017/07/29 20:44:08 static_date: 20170727'
+2017/07/29 20:44:08 static_date: 20170727
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:08'
++ echo -e '2017/07/29 20:44:08 pwd: /home/work/shangbai'
+2017/07/29 20:44:08 pwd: /home/work/shangbai
++ produce_md5
++ log 'sleep 2 hours...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:08'
++ echo -e '2017/07/29 20:44:08 sleep 2 hours...'
+2017/07/29 20:44:08 sleep 2 hours...
++ sleep 2h
+run.sh: line 425: 29272 Terminated              sleep 2h
++ log 'sleep done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:27'
++ echo -e '2017/07/29 20:44:27 sleep done'
+2017/07/29 20:44:27 sleep done
++ log 'generate md5 file...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:27'
++ echo -e '2017/07/29 20:44:27 generate md5 file...'
+2017/07/29 20:44:27 generate md5 file...
++ cd /home/work/shangbai/data/20170727
++ md5sum check_wisefc_na_day_20170727.res
++ cd -
+/home/work/shangbai
++ cd /home/work/shangbai/online
++ md5sum pc_dead
++ md5sum mixer_block
++ md5sum feed_block
++ md5sum badcase_replace
++ cd -
+/home/work/shangbai
++ log 'generate md5 file done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/29 20:44:29'
++ echo -e '2017/07/29 20:44:29 generate md5 file done'
+2017/07/29 20:44:29 generate md5 file done

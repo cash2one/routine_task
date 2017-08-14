@@ -1,0 +1,105 @@
++ [[ 1 == 1 ]]
++ static_date=20170721
++ local_dir=/home/work/shangbai
++ bin_dir=/home/work/shangbai/bin
++ data_dir=/home/work/shangbai/data/20170721
++ global_data_dir=/home/work/shangbai/online
++ log_dir=/home/work/shangbai/log
++ history_days=5
++ url_shangbai_data=ftp://cp01-rd-crm-cdc-db10.cp01.baidu.com/home/work/mbjhbtask/wisefc/check_wisefc_na_day_20170721
++ url_shangbai_md5=ftp://cp01-rd-crm-cdc-db10.cp01.baidu.com/home/work/mbjhbtask/wisefc/check_wisefc_na_day_20170721.md5
++ file_pc_dead=pc_dead
++ file_mixer_block=mixer_block
++ file_feed_block=feed_block
++ file_badcase_replace=badcase_replace
++ path_replace_dict=/home/work/shangbai/online/replace_dict
++ path_white_domain=/home/work/shangbai/online/white_domain
++ path_global_pc_dead=/home/work/shangbai/online/pc_dead
++ path_global_pc_dead_md5=/home/work/shangbai/online/pc_dead.md5
++ path_global_mixer_block=/home/work/shangbai/online/mixer_block
++ path_global_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_global_feed_block=/home/work/shangbai/online/feed_block
++ path_global_feed_block_md5=/home/work/shangbai/online/feed_block.md5
++ path_global_badcase_replace=/home/work/shangbai/online/badcase_replace
++ path_global_badcase_replace_md5=/home/work/shangbai/online/badcase_replace.md5
++ path_shangbai_ori=/home/work/shangbai/data/20170721/shangbai_ori
++ path_shangbai_ori_md5=/home/work/shangbai/data/20170721/shangbai_ori.md5
++ path_shangbai_data=/home/work/shangbai/data/20170721/shangbai_data
++ path_fe_input=/home/work/shangbai/data/20170721/fe_input
++ path_fe_output=/home/work/shangbai/data/20170721/fe_output
++ file_result_data=check_wisefc_na_day_20170721.res
++ path_result_data=/home/work/shangbai/data/20170721/check_wisefc_na_day_20170721.res
++ path_result_md5=/home/work/shangbai/data/20170721/check_wisefc_na_day_20170721.res.md5
++ path_pc_dead=/home/work/shangbai/data/20170721/pc_dead
++ path_mixer_block=/home/work/shangbai/data/20170721/mixer_block
++ path_feed_block=/home/work/shangbai/data/20170721/feed_block
++ path_mail_data=/home/work/shangbai/data/20170721/mail_data
++ path_trend_picture1=/home/work/shangbai/data/20170721/trend1.png
++ path_trend_picture2=/home/work/shangbai/data/20170721/trend2.png
++ path_trend1_base64=/home/work/shangbai/data/20170721/trend1_base64
++ path_trend2_base64=/home/work/shangbai/data/20170721/trend2_base64
++ path_sample_pc100=/home/work/shangbai/data/20170721/sample_pc100
++ path_sample_dead100=/home/work/shangbai/data/20170721/sample_dead100
++ path_mail_template=/home/work/shangbai/bin/mail_template
++ main_task
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 init work space...'
+2017/07/28 14:30:07 init work space...
++ log 'change directory to local dir...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 change directory to local dir...'
+2017/07/28 14:30:07 change directory to local dir...
++ cd /home/work/shangbai
++ log 'change directory done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 change directory done'
+2017/07/28 14:30:07 change directory done
++ [[ ! -d /home/work/shangbai/data/20170721 ]]
++ log 'init done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 init done'
+2017/07/28 14:30:07 init done
++ log 'static_date: 20170721'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 static_date: 20170721'
+2017/07/28 14:30:07 static_date: 20170721
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 pwd: /home/work/shangbai'
+2017/07/28 14:30:07 pwd: /home/work/shangbai
++ produce_trend_picture
++ log 'produce trend picture...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 produce trend picture...'
+2017/07/28 14:30:07 produce trend picture...
++ python /home/work/shangbai/bin/produce_trend.py 20170721 /home/work/shangbai/data/20170721/trend1.png /home/work/shangbai/data/20170721/trend2.png
++ base64 /home/work/shangbai/data/20170721/trend1.png
++ base64 /home/work/shangbai/data/20170721/trend2.png
++ log 'produce done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 produce done'
+2017/07/28 14:30:07 produce done
++ send_email
++ log 'send email...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 send email...'
+2017/07/28 14:30:07 send email...
++ python /home/work/shangbai/bin/produce_mail.py /home/work/shangbai/bin/mail_template /home/work/shangbai/data/20170721/mail_data /home/work/shangbai/data/20170721/sample_pc100 /home/work/shangbai/data/20170721/sample_dead100 /home/work/shangbai/data/20170721/trend1_base64 /home/work/shangbai/data/20170721/trend2_base64
++ /usr/sbin/sendmail -t
++ log 'send email done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/28 14:30:07'
++ echo -e '2017/07/28 14:30:07 send email done'
+2017/07/28 14:30:07 send email done

@@ -1,0 +1,86 @@
++ [[ 1 == 1 ]]
++ static_date=20170722
++ local_dir=/home/work/shangbai
++ bin_dir=/home/work/shangbai/bin
++ data_dir=/home/work/shangbai/data/20170722
++ global_data_dir=/home/work/shangbai/online
++ log_dir=/home/work/shangbai/log
++ history_days=5
++ url_shangbai_data=ftp://cp01-rd-crm-cdc-db10.cp01.baidu.com/home/work/mbjhbtask/wisefc/check_wisefc_na_day_20170722
++ url_shangbai_md5=ftp://cp01-rd-crm-cdc-db10.cp01.baidu.com/home/work/mbjhbtask/wisefc/check_wisefc_na_day_20170722.md5
++ file_pc_dead=pc_dead
++ file_mixer_block=mixer_block
++ file_feed_block=feed_block
++ path_replace_dict=/home/work/shangbai/online/replace_dict
++ path_white_domain=/home/work/shangbai/online/white_domain
++ path_global_pc_dead=/home/work/shangbai/online/pc_dead
++ path_global_pc_dead_md5=/home/work/shangbai/online/pc_dead.md5
++ path_global_mixer_block=/home/work/shangbai/online/mixer_block
++ path_global_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_global_feed_block=/home/work/shangbai/online/feed_block
++ path_global_feed_block_md5=/home/work/shangbai/online/feed_block.md5
++ path_shangbai_ori=/home/work/shangbai/data/20170722/shangbai_ori
++ path_shangbai_ori_md5=/home/work/shangbai/data/20170722/shangbai_ori.md5
++ path_shangbai_data=/home/work/shangbai/data/20170722/shangbai_data
++ path_fe_input=/home/work/shangbai/data/20170722/fe_input
++ path_fe_output=/home/work/shangbai/data/20170722/fe_output
++ file_result_data=result_dict
++ path_result_data=/home/work/shangbai/data/20170722/result_dict
++ path_result_md5=/home/work/shangbai/data/20170722/result_dict.md5
++ path_pc_dead=/home/work/shangbai/data/20170722/pc_dead
++ path_mixer_block=/home/work/shangbai/data/20170722/mixer_block
++ path_feed_block=/home/work/shangbai/data/20170722/feed_block
++ path_mail_data=/home/work/shangbai/data/20170722/mail_data
++ path_trend_picture=/home/work/shangbai/data/20170722/trend.png
++ path_trend_base64=/home/work/shangbai/data/20170722/trend_base64
++ path_sample_pc100=/home/work/shangbai/data/20170722/sample_pc100
++ path_sample_dead100=/home/work/shangbai/data/20170722/sample_dead100
++ path_mail_template=/home/work/shangbai/bin/mail_template
++ main_task
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/26 12:16:46'
++ echo -e '2017/07/26 12:16:46 init work space...'
+2017/07/26 12:16:46 init work space...
++ log 'change directory to local dir...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/26 12:16:46'
++ echo -e '2017/07/26 12:16:46 change directory to local dir...'
+2017/07/26 12:16:46 change directory to local dir...
++ cd /home/work/shangbai
++ log 'change directory done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/26 12:16:46'
++ echo -e '2017/07/26 12:16:46 change directory done'
+2017/07/26 12:16:46 change directory done
++ [[ ! -d /home/work/shangbai/data/20170722 ]]
++ log 'init done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/26 12:16:46'
++ echo -e '2017/07/26 12:16:46 init done'
+2017/07/26 12:16:46 init done
++ log 'static_date: 20170722'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/26 12:16:46'
++ echo -e '2017/07/26 12:16:46 static_date: 20170722'
+2017/07/26 12:16:46 static_date: 20170722
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/26 12:16:46'
++ echo -e '2017/07/26 12:16:46 pwd: /home/work/shangbai'
+2017/07/26 12:16:46 pwd: /home/work/shangbai
++ send_email
++ log 'send email...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/26 12:16:46'
++ echo -e '2017/07/26 12:16:46 send email...'
+2017/07/26 12:16:46 send email...
++ python /home/work/shangbai/bin/produce_mail.py /home/work/shangbai/bin/mail_template /home/work/shangbai/data/20170722/mail_data /home/work/shangbai/data/20170722/sample_pc100 /home/work/shangbai/data/20170722/sample_dead100 /home/work/shangbai/data/20170722/trend_base64
++ /usr/sbin/sendmail -t
++ log 'send email done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/07/26 12:16:46'
++ echo -e '2017/07/26 12:16:46 send email done'
+2017/07/26 12:16:46 send email done

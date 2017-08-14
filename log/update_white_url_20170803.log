@@ -1,0 +1,2616 @@
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 20:08:42] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] init work space...'
+[2017/08/03 20:08:42] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] change directory...'
+[2017/08/03 20:08:42] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] change done'
+[2017/08/03 20:08:42] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] inti done'
+[2017/08/03 20:08:42] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] pwd: /home/work/shangbai'
+[2017/08/03 20:08:42] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] run update white url...'
+[2017/08/03 20:08:42] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 20:08:42--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => "/home/work/shangbai/tmp/tmp_white_url.md5"
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 49.5K=0.001s
+
+2017-08-03 20:08:42 (49.5 KB/s) - "/home/work/shangbai/tmp/tmp_white_url.md5" saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] dont need to wget'
+[2017/08/03 20:08:42] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] white url is updated'
+[2017/08/03 20:08:42] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:08:42'
++ echo -e '[2017/08/03 20:08:42] done =============================================================================================================================='
+[2017/08/03 20:08:42] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 20:10:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] init work space...'
+[2017/08/03 20:10:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] change directory...'
+[2017/08/03 20:10:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] change done'
+[2017/08/03 20:10:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] inti done'
+[2017/08/03 20:10:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] pwd: /home/work/shangbai'
+[2017/08/03 20:10:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] run update white url...'
+[2017/08/03 20:10:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 20:10:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.6K=0.005s
+
+2017-08-03 20:10:01 (15.6 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] dont need to wget'
+[2017/08/03 20:10:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] white url is updated'
+[2017/08/03 20:10:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:10:01'
++ echo -e '[2017/08/03 20:10:01] done =============================================================================================================================='
+[2017/08/03 20:10:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 20:20:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] init work space...'
+[2017/08/03 20:20:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] change directory...'
+[2017/08/03 20:20:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] change done'
+[2017/08/03 20:20:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] inti done'
+[2017/08/03 20:20:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] pwd: /home/work/shangbai'
+[2017/08/03 20:20:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] run update white url...'
+[2017/08/03 20:20:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 20:20:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.5K=0.005s
+
+2017-08-03 20:20:01 (15.5 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] dont need to wget'
+[2017/08/03 20:20:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] white url is updated'
+[2017/08/03 20:20:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:20:01'
++ echo -e '[2017/08/03 20:20:01] done =============================================================================================================================='
+[2017/08/03 20:20:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 20:30:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] init work space...'
+[2017/08/03 20:30:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] change directory...'
+[2017/08/03 20:30:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] change done'
+[2017/08/03 20:30:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] inti done'
+[2017/08/03 20:30:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] pwd: /home/work/shangbai'
+[2017/08/03 20:30:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] run update white url...'
+[2017/08/03 20:30:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 20:30:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.7K=0.005s
+
+2017-08-03 20:30:01 (15.7 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] dont need to wget'
+[2017/08/03 20:30:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] white url is updated'
+[2017/08/03 20:30:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:30:01'
++ echo -e '[2017/08/03 20:30:01] done =============================================================================================================================='
+[2017/08/03 20:30:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 20:40:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] init work space...'
+[2017/08/03 20:40:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] change directory...'
+[2017/08/03 20:40:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] change done'
+[2017/08/03 20:40:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] inti done'
+[2017/08/03 20:40:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] pwd: /home/work/shangbai'
+[2017/08/03 20:40:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] run update white url...'
+[2017/08/03 20:40:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 20:40:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 9.35K=0.008s
+
+2017-08-03 20:40:01 (9.35 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] dont need to wget'
+[2017/08/03 20:40:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] white url is updated'
+[2017/08/03 20:40:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:40:01'
++ echo -e '[2017/08/03 20:40:01] done =============================================================================================================================='
+[2017/08/03 20:40:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 20:50:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] init work space...'
+[2017/08/03 20:50:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] change directory...'
+[2017/08/03 20:50:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] change done'
+[2017/08/03 20:50:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] inti done'
+[2017/08/03 20:50:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] pwd: /home/work/shangbai'
+[2017/08/03 20:50:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] run update white url...'
+[2017/08/03 20:50:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 20:50:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.8K=0.005s
+
+2017-08-03 20:50:01 (15.8 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] dont need to wget'
+[2017/08/03 20:50:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] white url is updated'
+[2017/08/03 20:50:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 20:50:01'
++ echo -e '[2017/08/03 20:50:01] done =============================================================================================================================='
+[2017/08/03 20:50:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 21:00:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] init work space...'
+[2017/08/03 21:00:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] change directory...'
+[2017/08/03 21:00:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] change done'
+[2017/08/03 21:00:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] inti done'
+[2017/08/03 21:00:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] pwd: /home/work/shangbai'
+[2017/08/03 21:00:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] run update white url...'
+[2017/08/03 21:00:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 21:00:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 12.9K=0.006s
+
+2017-08-03 21:00:01 (12.9 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] dont need to wget'
+[2017/08/03 21:00:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] white url is updated'
+[2017/08/03 21:00:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:00:01'
++ echo -e '[2017/08/03 21:00:01] done =============================================================================================================================='
+[2017/08/03 21:00:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 21:10:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] init work space...'
+[2017/08/03 21:10:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] change directory...'
+[2017/08/03 21:10:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] change done'
+[2017/08/03 21:10:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] inti done'
+[2017/08/03 21:10:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] pwd: /home/work/shangbai'
+[2017/08/03 21:10:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] run update white url...'
+[2017/08/03 21:10:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 21:10:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 1.14K=0.06s
+
+2017-08-03 21:10:01 (1.14 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] dont need to wget'
+[2017/08/03 21:10:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] white url is updated'
+[2017/08/03 21:10:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:10:01'
++ echo -e '[2017/08/03 21:10:01] done =============================================================================================================================='
+[2017/08/03 21:10:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 21:20:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] init work space...'
+[2017/08/03 21:20:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] change directory...'
+[2017/08/03 21:20:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] change done'
+[2017/08/03 21:20:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] inti done'
+[2017/08/03 21:20:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] pwd: /home/work/shangbai'
+[2017/08/03 21:20:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] run update white url...'
+[2017/08/03 21:20:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 21:20:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 52.3K=0.001s
+
+2017-08-03 21:20:01 (52.3 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] dont need to wget'
+[2017/08/03 21:20:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] white url is updated'
+[2017/08/03 21:20:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:20:01'
++ echo -e '[2017/08/03 21:20:01] done =============================================================================================================================='
+[2017/08/03 21:20:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 21:30:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] init work space...'
+[2017/08/03 21:30:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] change directory...'
+[2017/08/03 21:30:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] change done'
+[2017/08/03 21:30:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] inti done'
+[2017/08/03 21:30:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] pwd: /home/work/shangbai'
+[2017/08/03 21:30:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] run update white url...'
+[2017/08/03 21:30:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 21:30:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 11.3K=0.006s
+
+2017-08-03 21:30:01 (11.3 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] dont need to wget'
+[2017/08/03 21:30:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] white url is updated'
+[2017/08/03 21:30:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:30:01'
++ echo -e '[2017/08/03 21:30:01] done =============================================================================================================================='
+[2017/08/03 21:30:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 21:40:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] init work space...'
+[2017/08/03 21:40:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] change directory...'
+[2017/08/03 21:40:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] change done'
+[2017/08/03 21:40:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] inti done'
+[2017/08/03 21:40:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] pwd: /home/work/shangbai'
+[2017/08/03 21:40:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] run update white url...'
+[2017/08/03 21:40:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 21:40:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.5K=0.005s
+
+2017-08-03 21:40:01 (15.5 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] dont need to wget'
+[2017/08/03 21:40:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] white url is updated'
+[2017/08/03 21:40:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:40:01'
++ echo -e '[2017/08/03 21:40:01] done =============================================================================================================================='
+[2017/08/03 21:40:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 21:50:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] init work space...'
+[2017/08/03 21:50:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] change directory...'
+[2017/08/03 21:50:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] change done'
+[2017/08/03 21:50:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] inti done'
+[2017/08/03 21:50:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] pwd: /home/work/shangbai'
+[2017/08/03 21:50:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] run update white url...'
+[2017/08/03 21:50:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 21:50:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 17.5K=0.004s
+
+2017-08-03 21:50:01 (17.5 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] dont need to wget'
+[2017/08/03 21:50:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] white url is updated'
+[2017/08/03 21:50:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 21:50:01'
++ echo -e '[2017/08/03 21:50:01] done =============================================================================================================================='
+[2017/08/03 21:50:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 22:00:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] init work space...'
+[2017/08/03 22:00:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] change directory...'
+[2017/08/03 22:00:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] change done'
+[2017/08/03 22:00:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] inti done'
+[2017/08/03 22:00:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] pwd: /home/work/shangbai'
+[2017/08/03 22:00:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] run update white url...'
+[2017/08/03 22:00:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 22:00:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 72.7K=0.001s
+
+2017-08-03 22:00:01 (72.7 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] dont need to wget'
+[2017/08/03 22:00:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] white url is updated'
+[2017/08/03 22:00:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:00:01'
++ echo -e '[2017/08/03 22:00:01] done =============================================================================================================================='
+[2017/08/03 22:00:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 22:10:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] init work space...'
+[2017/08/03 22:10:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] change directory...'
+[2017/08/03 22:10:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] change done'
+[2017/08/03 22:10:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] inti done'
+[2017/08/03 22:10:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] pwd: /home/work/shangbai'
+[2017/08/03 22:10:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] run update white url...'
+[2017/08/03 22:10:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 22:10:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.6K=0.005s
+
+2017-08-03 22:10:01 (15.6 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] dont need to wget'
+[2017/08/03 22:10:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] white url is updated'
+[2017/08/03 22:10:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:10:01'
++ echo -e '[2017/08/03 22:10:01] done =============================================================================================================================='
+[2017/08/03 22:10:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:01'
++ echo -e '[2017/08/03 22:20:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 22:20:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:01'
++ echo -e '[2017/08/03 22:20:01] init work space...'
+[2017/08/03 22:20:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:01'
++ echo -e '[2017/08/03 22:20:01] change directory...'
+[2017/08/03 22:20:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:01'
++ echo -e '[2017/08/03 22:20:01] change done'
+[2017/08/03 22:20:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:01'
++ echo -e '[2017/08/03 22:20:01] inti done'
+[2017/08/03 22:20:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:01'
++ echo -e '[2017/08/03 22:20:01] pwd: /home/work/shangbai'
+[2017/08/03 22:20:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:01'
++ echo -e '[2017/08/03 22:20:01] run update white url...'
+[2017/08/03 22:20:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 22:20:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.4K=0.005s
+
+2017-08-03 22:20:02 (15.4 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:02'
++ echo -e '[2017/08/03 22:20:02] dont need to wget'
+[2017/08/03 22:20:02] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:02'
++ echo -e '[2017/08/03 22:20:02] white url is updated'
+[2017/08/03 22:20:02] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:20:02'
++ echo -e '[2017/08/03 22:20:02] done =============================================================================================================================='
+[2017/08/03 22:20:02] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 22:30:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] init work space...'
+[2017/08/03 22:30:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] change directory...'
+[2017/08/03 22:30:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] change done'
+[2017/08/03 22:30:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] inti done'
+[2017/08/03 22:30:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] pwd: /home/work/shangbai'
+[2017/08/03 22:30:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] run update white url...'
+[2017/08/03 22:30:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 22:30:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 16.0K=0.005s
+
+2017-08-03 22:30:01 (16.0 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] dont need to wget'
+[2017/08/03 22:30:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] white url is updated'
+[2017/08/03 22:30:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:30:01'
++ echo -e '[2017/08/03 22:30:01] done =============================================================================================================================='
+[2017/08/03 22:30:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 22:40:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] init work space...'
+[2017/08/03 22:40:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] change directory...'
+[2017/08/03 22:40:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] change done'
+[2017/08/03 22:40:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] inti done'
+[2017/08/03 22:40:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] pwd: /home/work/shangbai'
+[2017/08/03 22:40:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] run update white url...'
+[2017/08/03 22:40:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 22:40:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 14.2K=0.005s
+
+2017-08-03 22:40:01 (14.2 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] dont need to wget'
+[2017/08/03 22:40:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] white url is updated'
+[2017/08/03 22:40:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:40:01'
++ echo -e '[2017/08/03 22:40:01] done =============================================================================================================================='
+[2017/08/03 22:40:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 22:50:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] init work space...'
+[2017/08/03 22:50:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] change directory...'
+[2017/08/03 22:50:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] change done'
+[2017/08/03 22:50:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] inti done'
+[2017/08/03 22:50:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] pwd: /home/work/shangbai'
+[2017/08/03 22:50:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] run update white url...'
+[2017/08/03 22:50:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 22:50:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 9.50K=0.008s
+
+2017-08-03 22:50:01 (9.50 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] dont need to wget'
+[2017/08/03 22:50:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] white url is updated'
+[2017/08/03 22:50:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 22:50:01'
++ echo -e '[2017/08/03 22:50:01] done =============================================================================================================================='
+[2017/08/03 22:50:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 23:00:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] init work space...'
+[2017/08/03 23:00:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] change directory...'
+[2017/08/03 23:00:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] change done'
+[2017/08/03 23:00:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] inti done'
+[2017/08/03 23:00:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] pwd: /home/work/shangbai'
+[2017/08/03 23:00:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] run update white url...'
+[2017/08/03 23:00:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 23:00:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 16.6K=0.004s
+
+2017-08-03 23:00:01 (16.6 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] dont need to wget'
+[2017/08/03 23:00:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] white url is updated'
+[2017/08/03 23:00:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:00:01'
++ echo -e '[2017/08/03 23:00:01] done =============================================================================================================================='
+[2017/08/03 23:00:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 23:10:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] init work space...'
+[2017/08/03 23:10:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] change directory...'
+[2017/08/03 23:10:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] change done'
+[2017/08/03 23:10:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] inti done'
+[2017/08/03 23:10:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] pwd: /home/work/shangbai'
+[2017/08/03 23:10:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] run update white url...'
+[2017/08/03 23:10:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 23:10:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 16.3K=0.004s
+
+2017-08-03 23:10:01 (16.3 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] dont need to wget'
+[2017/08/03 23:10:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] white url is updated'
+[2017/08/03 23:10:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:10:01'
++ echo -e '[2017/08/03 23:10:01] done =============================================================================================================================='
+[2017/08/03 23:10:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 23:20:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] init work space...'
+[2017/08/03 23:20:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] change directory...'
+[2017/08/03 23:20:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] change done'
+[2017/08/03 23:20:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] inti done'
+[2017/08/03 23:20:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] pwd: /home/work/shangbai'
+[2017/08/03 23:20:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] run update white url...'
+[2017/08/03 23:20:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 23:20:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.8K=0.005s
+
+2017-08-03 23:20:01 (15.8 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] dont need to wget'
+[2017/08/03 23:20:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] white url is updated'
+[2017/08/03 23:20:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:20:01'
++ echo -e '[2017/08/03 23:20:01] done =============================================================================================================================='
+[2017/08/03 23:20:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:01'
++ echo -e '[2017/08/03 23:30:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 23:30:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:01'
++ echo -e '[2017/08/03 23:30:01] init work space...'
+[2017/08/03 23:30:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:01'
++ echo -e '[2017/08/03 23:30:01] change directory...'
+[2017/08/03 23:30:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:01'
++ echo -e '[2017/08/03 23:30:01] change done'
+[2017/08/03 23:30:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:01'
++ echo -e '[2017/08/03 23:30:01] inti done'
+[2017/08/03 23:30:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:01'
++ echo -e '[2017/08/03 23:30:01] pwd: /home/work/shangbai'
+[2017/08/03 23:30:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:01'
++ echo -e '[2017/08/03 23:30:01] run update white url...'
+[2017/08/03 23:30:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 23:30:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 15.2K=0.005s
+
+2017-08-03 23:30:02 (15.2 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:02'
++ echo -e '[2017/08/03 23:30:02] dont need to wget'
+[2017/08/03 23:30:02] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:02'
++ echo -e '[2017/08/03 23:30:02] white url is updated'
+[2017/08/03 23:30:02] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:30:02'
++ echo -e '[2017/08/03 23:30:02] done =============================================================================================================================='
+[2017/08/03 23:30:02] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 23:40:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] init work space...'
+[2017/08/03 23:40:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] change directory...'
+[2017/08/03 23:40:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] change done'
+[2017/08/03 23:40:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] inti done'
+[2017/08/03 23:40:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] pwd: /home/work/shangbai'
+[2017/08/03 23:40:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] run update white url...'
+[2017/08/03 23:40:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 23:40:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 9.94K=0.007s
+
+2017-08-03 23:40:01 (9.94 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] dont need to wget'
+[2017/08/03 23:40:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] white url is updated'
+[2017/08/03 23:40:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:40:01'
++ echo -e '[2017/08/03 23:40:01] done =============================================================================================================================='
+[2017/08/03 23:40:01] done ==============================================================================================================================
++ local_dir=/home/work/shangbai
++ data_dir=/home/work/shangbai/online
++ tmp_dir=/home/work/shangbai/tmp
++ bin_dir=/home/work/shangbai/bin
++ url_white_url=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_white_url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ path_white_url=/home/work/shangbai/online/white_url
++ path_white_url_md5=/home/work/shangbai/online/white_url.md5
++ tmp_white_url=/home/work/shangbai/tmp/tmp_white_url
++ tmp_white_url_md5=/home/work/shangbai/tmp/tmp_white_url.md5
++ file_mixer_block=mixer_block
++ path_mixer_block=/home/work/shangbai/online/mixer_block
++ path_mixer_block_md5=/home/work/shangbai/online/mixer_block.md5
++ path_mixer_full=/home/work/shangbai/online/mixer_full
++ path_mixer_full_md5=/home/work/shangbai/online/mixer_full.md5
++ main_task
++ log 'start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+[2017/08/03 23:50:01] start updating ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ init_work
++ log 'init work space...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] init work space...'
+[2017/08/03 23:50:01] init work space...
++ log 'change directory...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] change directory...'
+[2017/08/03 23:50:01] change directory...
++ cd /home/work/shangbai
++ log 'change done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] change done'
+[2017/08/03 23:50:01] change done
++ log 'inti done'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] inti done'
+[2017/08/03 23:50:01] inti done
+++ pwd
++ log 'pwd: /home/work/shangbai'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] pwd: /home/work/shangbai'
+[2017/08/03 23:50:01] pwd: /home/work/shangbai
++ update_white_url
++ log 'run update white url...'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] run update white url...'
+[2017/08/03 23:50:01] run update white url...
++ do_wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 /home/work/shangbai/tmp/tmp_white_url /home/work/shangbai/tmp/tmp_white_url.md5
++ [[ 4 != 4 ]]
++ url_data=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt
++ url_md5=ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
++ local_data=/home/work/shangbai/tmp/tmp_white_url
++ local_md5=/home/work/shangbai/tmp/tmp_white_url.md5
+++ md5sum /home/work/shangbai/tmp/tmp_white_url
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ -n true ]]
++ wget ftp://10.46.240.12:/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5 -O /home/work/shangbai/tmp/tmp_white_url.md5
+--2017-08-03 23:50:01--  ftp://10.46.240.12/home/work/zongkong/userdata/40/na_badcase_white_dict/na_badcase_white_dict_sys_default_0.txt.md5
+           => `/home/work/shangbai/tmp/tmp_white_url.md5'
+Connecting to 10.46.240.12:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /home/work/zongkong/userdata/40/na_badcase_white_dict ... done.
+==> SIZE na_badcase_white_dict_sys_default_0.txt.md5 ... 74
+==> PASV ... done.    ==> RETR na_badcase_white_dict_sys_default_0.txt.md5 ... done.
+Length: 74 (unauthoritative)
+
+     0K                                                       100% 14.9K=0.005s
+
+2017-08-03 23:50:01 (14.9 KB/s) - `/home/work/shangbai/tmp/tmp_white_url.md5' saved [74]
+
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ should_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'dont need to wget'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] dont need to wget'
+[2017/08/03 23:50:01] dont need to wget
++ break
++ return 0
+++ cat /home/work/shangbai/online/white_url.md5
+++ awk '{print $1}'
++ old_md5=4e076380d6b0932bbf6e9918338ef7bc
+++ cat /home/work/shangbai/tmp/tmp_white_url.md5
+++ awk '{print $1}'
++ new_md5=4e076380d6b0932bbf6e9918338ef7bc
++ [[ 4e076380d6b0932bbf6e9918338ef7bc == 4e076380d6b0932bbf6e9918338ef7bc ]]
++ log 'white url is updated'
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] white url is updated'
+[2017/08/03 23:50:01] white url is updated
++ return 0
++ log 'done =============================================================================================================================='
+++ date '+%Y/%m/%d %H:%M:%S'
++ now_date='2017/08/03 23:50:01'
++ echo -e '[2017/08/03 23:50:01] done =============================================================================================================================='
+[2017/08/03 23:50:01] done ==============================================================================================================================

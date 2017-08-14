@@ -1,0 +1,46 @@
++ declare list_input
++ hadoop_bin=/home/liqibo/software/hadoop-client-nmg/hadoop/bin/hadoop
++ date_begin=20170727
++ date_end=20170727
++ date_range=20170727-20170727
++ path_output=hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/ecom/fcr/liqibo/url2/20170727
+++ list_input 20170727 20170727
+++ prefix_input=hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/dt/udw/release/app/fengchao/shitu/222_223
+++ postfix_input='*/part-*'
+++ [[ 2 == 1 ]]
+++ [[ 2 == 2 ]]
+++ static_date=20170727
+++ [[ 20170727 -le 20170727 ]]
+++ echo '-input "hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/dt/udw/release/app/fengchao/shitu/222_223/20170727/*/part-*"'
++++ date '-d20170727 1 day' +%Y%m%d
+++ static_date=20170728
+++ [[ 20170728 -le 20170727 ]]
++ path_input='-input "hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/dt/udw/release/app/fengchao/shitu/222_223/20170727/*/part-*"'
++ main_task
++ run_hadoop
++ /home/liqibo/software/hadoop-client-nmg/hadoop/bin/hadoop fs -rmr hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/ecom/fcr/liqibo/url2/20170727
+rmr: hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/ecom/fcr/liqibo/url2/20170727
++ /home/liqibo/software/hadoop-client-nmg/hadoop/bin/hadoop streaming -input '"hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/dt/udw/release/app/fengchao/shitu/222_223/20170727/*/part-*"' -output hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/ecom/fcr/liqibo/url2/20170727 -mapper 'python27/bin/python2.7 mapper.py' -reducer 'python27/bin/python2.7 reducer.p17/08/01 16:21:39 INFO hdfs.FMSClient: Write 25051280194470749 in pipeline 10.74.198.45:7001, 10.74.182.30:7001, 10.74.68.11:7001
+17/08/01 16:21:42 INFO mapred.JobClient: splits size : 78982
+17/08/01 16:21:42 INFO hdfs.FMSClient: Write 6192456755450558 in pipeline 10.74.90.18:7001, 10.74.34.33:7001, 10.74.45.43:7001
+17/08/01 16:21:42 INFO split.SplitUtils: create hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/dc/deva/system/mapred/job_20170705161142_1306857/split.done
+17/08/01 16:21:43 INFO hdfs.FMSClient: Write 11259006337627648 in pipeline 10.74.89.22:7001, 10.74.164.43:7001, 10.74.186.21:7001
+17/08/01 16:21:43 INFO mapred.JobClient: Running job: job_20170705161142_1306857
+17/08/01 16:21:43 INFO mapred.JobClient: To kill this job, run:
+17/08/01 16:21:43 INFO mapred.JobClient: /home/liqibo/software/hadoop-client-nmg/hadoop/bin/../bin/hadoop job -Dmapred.job.tracker=nmg01-khan-abaci.dmop.baidu.com:54311 -kill job_20170705161142_1306857
+17/08/01 16:21:43 INFO mapred.JobClient: Tracking URL: http://nmg01-khan-mapred01.nmg01.baidu.com:8030/jobproxy.jsp?jobid=job_20170705161142_1306857
+17/08/01 16:22:06 INFO mapred.JobClient:  map 0% reduce 0%
+/part-*
+17/08/01 16:21:03 INFO mapred.FileInputFormat: Total input paths to process : 4800
+17/08/01 16:21:03 WARN mapred.FileInputFormat: Split size is optimized by default, you can set 'abaci.split.optimize.enable=false' to skip it
+17/08/01 16:22:13 INFO hdfs.FMSClient: Write 7036881685584173 in pipeline 10.74.207.13:7001, 10.74.75.42:7001, 10.74.179.35:7001
+17/08/01 16:22:16 INFO mapred.JobClient: splits size : 78982
+17/08/01 16:22:16 INFO hdfs.FMSClient: Write 15199656010672023 in pipeline 10.74.192.12:7001, 10.74.127.48:7001, 10.74.103.18:7001
+17/08/01 16:22:17 INFO split.SplitUtils: create hdfs://nmg01-khan-hdfs.dmop.baidu.com:54310/app/dc/deva/system/mapred/job_20170705161142_1306887/split.done
+17/08/01 16:22:17 INFO hdfs.FMSClient: Write 26740130055715813 in pipeline 10.74.164.34:7001, 10.74.192.33:7001, 10.74.56.30:7001
+17/08/01 16:22:18 INFO mapred.JobClient: Running job: job_20170705161142_1306887
+17/08/01 16:22:18 INFO mapred.JobClient: To kill this job, run:
+17/08/01 16:22:18 INFO mapred.JobClient: /home/liqibo/software/hadoop-client-nmg/hadoop/bin/../bin/hadoop job -Dmapred.job.tracker=nmg01-khan-abaci.dmop.baidu.com:54311 -kill job_20170705161142_1306887
+17/08/01 16:22:18 INFO mapred.JobClient: Tracking URL: http://nmg01-khan-mapred01.nmg01.baidu.com:8030/jobproxy.jsp?jobid=job_20170705161142_1306887
+17/08/01 16:22:40 INFO mapred.JobClient:  map 0% reduce 0%
+17/08/01 21:23:06 INFO federation.ViewFileSystem: java.lang.reflect.UndeclaredThrowableException
